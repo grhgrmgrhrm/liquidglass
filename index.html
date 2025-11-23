@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Explore - Discover the World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<input type="checkbox" id="menu-toggle" style="display: none;">
+
+<svg style="display: none">
+    <filter id="glass-distortion">
+        <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="44" />
+    </filter>
+</svg>
+
+<section id="hero">
+    <div class="hero-bg"></div>
+
+    <nav class="glass-nav">
+        <div class="glass-filter"></div>
+        <div class="glass-overlay"></div>
+        <div class="glass-specular"></div>
+        <div class="glass-content">
+            <span class="nav-logo">Travel & Explore</span>
+
+            <ul class="nav-list">
+                <li><button class="nav-item active" data-style="default">Default</button></li>
+                <li><button class="nav-item" data-style="liquid">Liquid</button></li>
+                <li><button class="nav-item" data-style="glacier">Glacier</button></li>
+            </ul>
+
+            <label for="menu-toggle" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+    </nav>
+</section>
+
+<div class="glass-sidebar-container">
+    <label for="menu-toggle" class="sidebar-overlay"></label>
+
+    <div class="glass-sidebar">
+        <div class="glass-filter"></div>
+        <div class="glass-overlay"></div>
+        <div class="glass-specular"></div>
+        <div class="glass-content">
+
+            <div class="sidebar-header">
+                <h3>Choose Style</h3>
+                <label for="menu-toggle" class="close-btn"><i class="fas fa-times"></i></label>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-style="default">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Default</span>
+                </button>
+
+                <button class="nav-item" data-style="liquid">
+                    <i class="fas fa-tint"></i>
+                    <span>Liquid</span>
+                </button>
+
+                <button class="nav-item" data-style="glacier">
+                    <i class="far fa-snowflake"></i>
+                    <span>Glacier</span>
+                </button>
+            </nav>
+
+            <div style="padding: 20px; opacity: 0.7; font-size: 14px; margin-top: auto;">
+                <p>Tap to change glass effect</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="features" data-theme="light">
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="material-icons">security</span>
+                <h3>Safety 24/7</h3>
+                <p>We ensure your safety throughout the entire journey with round-the-clock support.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons">star</span>
+                <h3>Best Guides</h3>
+                <p>Our guides are locals who know every hidden gem and story of the land.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons">eco</span>
+                <h3>Eco-Tourism</h3>
+                <p>We promote sustainable travel that respects nature and local communities.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons">attach_money</span>
+                <h3>Fair Prices</h3>
+                <p>Transparent pricing with no hidden fees. You get what you pay for.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="destinations" data-theme="light">
+    <div class="container">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="https://loremflickr.com/400/300/bali,beach" alt="Bali">
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Tropical paradise with rich culture.</p>
+                    <span class="price">from $899</span>
+                    <a href="#" class="btn btn-text">Details</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://loremflickr.com/400/300/iceland,ice" alt="Iceland">
+                <div class="card-content">
+                    <h3>Iceland</h3>
+                    <p>Land of fire and ice, auroras and waterfalls.</p>
+                    <span class="price">from $1299</span>
+                    <a href="#" class="btn btn-text">Details</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://loremflickr.com/400/300/peru,mountain" alt="Peru">
+                <div class="card-content">
+                    <h3>Machu Picchu, Peru</h3>
+                    <p>Ancient Incan city in the Andes.</p>
+                    <span class="price">from $1499</span>
+                    <a href="#" class="btn btn-text">Details</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://loremflickr.com/400/300/japan,city" alt="Japan">
+                <div class="card-content">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Traditional temples and cherry blossoms.</p>
+                    <span class="price">from $1199</span>
+                    <a href="#" class="btn btn-text">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="promo">
+    <div class="container promo-container">
+        <div class="promo-text">
+            <h2>Hot Deal: Patagonia</h2>
+            <p>Experience the wild beauty of Patagonia with a 30% discount for bookings made this month. Don't miss this chance!</p>
+            <a href="#contact" class="btn btn-accent">Book Now</a>
+        </div>
+        <div class="promo-image">
+            <img src="https://loremflickr.com/600/400/patagonia,mountain" alt="Patagonia">
+        </div>
+    </div>
+</section>
+
+<section id="process" data-theme="light">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Apply</h3>
+                <p>Fill out the form or contact us.</p>
+            </div>
+            <div class="step-arrow"><span class="material-icons">arrow_forward</span></div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>We Plan</h3>
+                <p>We create a custom itinerary for you.</p>
+            </div>
+            <div class="step-arrow"><span class="material-icons">arrow_forward</span></div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Visa & Prep</h3>
+                <p>We help with documents and packing.</p>
+            </div>
+            <div class="step-arrow"><span class="material-icons">arrow_forward</span></div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Travel</h3>
+                <p>Enjoy your unforgettable journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" data-theme="light">
+    <div class="container">
+        <h2>Inspiration</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item item-1"><img src="https://loremflickr.com/400/400/travel,nature?random=1" alt="Gallery 1"></div>
+            <div class="gallery-item item-2"><img src="https://loremflickr.com/400/400/travel,people?random=2" alt="Gallery 2"></div>
+            <div class="gallery-item item-3"><img src="https://loremflickr.com/400/400/travel,food?random=3" alt="Gallery 3"></div>
+            <div class="gallery-item item-4"><img src="https://loremflickr.com/400/400/travel,city?random=4" alt="Gallery 4"></div>
+            <div class="gallery-item item-5"><img src="https://loremflickr.com/400/400/travel,sea?random=5" alt="Gallery 5"></div>
+            <div class="gallery-item item-6"><img src="https://loremflickr.com/400/400/travel,mountain?random=6" alt="Gallery 6"></div>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" data-theme="light">
+    <div class="container">
+        <h2>What Travelers Say</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="https://loremflickr.com/100/100/person?random=1" alt="User 1" class="avatar">
+                <h3>Sarah Jenkins</h3>
+                <div class="stars">★★★★★</div>
+                <p>"The best trip of my life! Everything was organized perfectly."</p>
+            </div>
+            <div class="review-card">
+                <img src="https://loremflickr.com/100/100/person?random=2" alt="User 2" class="avatar">
+                <h3>Mike Ross</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Incredible guides and amazing locations. Highly recommend!"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://loremflickr.com/100/100/person?random=3" alt="User 3" class="avatar">
+                <h3>Elena Fisher</h3>
+                <div class="stars">★★★★☆</div>
+                <p>"Great experience, very authentic and safe. Will book again."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" data-theme="light">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <details>
+                <summary>Do I need a visa?</summary>
+                <p>It depends on the destination and your citizenship. We provide full visa support and consultation.</p>
+            </details>
+            <details>
+                <summary>What is included in the insurance?</summary>
+                <p>Our standard insurance covers medical emergencies and flight cancellations. Upgrades available.</p>
+            </details>
+            <details>
+                <summary>Can I get a refund?</summary>
+                <p>Yes, we offer a flexible cancellation policy. Full refund up to 30 days before departure.</p>
+            </details>
+            <details>
+                <summary>Are flights included?</summary>
+                <p>International flights are usually not included to give you flexibility, but we can book them for you.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container footer-content">
+        <div class="footer-form">
+            <h3>Get Secret Deals</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-accent">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p><span class="material-icons">phone</span> +1 (555) 123-4567</p>
+            <p><span class="material-icons">email</span> hello@travelworld.com</p>
+            <p><span class="material-icons">location_on</span> 123 Adventure Rd, Travel City</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 TravelWorld. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
